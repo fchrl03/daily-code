@@ -25,7 +25,7 @@
 }
 
 .mar-up {
-  margin-top: 6rem;
+  margin-top: 4.8rem;
 }
 
 .bg-jumbotron {
@@ -46,4 +46,29 @@
 .bx-globe {
   font-size: 50px;
   color: #8e8e8e;
+}
+
+.fix-width {
+  width: fit-content;
+}
+
+.bx-loader-circle,
+.bx-water {
+  font-size: 48px;
+}
+
+.img-personalize {
+  width: 100%;
+}
+
+.bg-footer {
+  background-color: #f0f0f0;
+}
+
+.pad-tb {
+  padding: 5rem 0;
+}
+
+.txt-decorate {
+  text-decoration: none;
 }
