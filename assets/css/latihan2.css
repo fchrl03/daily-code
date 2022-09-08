@@ -1,0 +1,14 @@
+.violet {
+  background-color: #712cf9;
+}
+
+.line-vertical {
+  border-left: 1px white solid;
+  height: 100%;
+  width: 0px;
+  opacity: 50%;
+}
+
+.img-filter {
+  filter: grayscale(1);
+}
