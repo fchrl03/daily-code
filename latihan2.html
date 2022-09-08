@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg violet p-2">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="img-filter" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" height="37" /></a>
+        <a class="navbar-brand" href="#"><i class="bx bxl-bootstrap"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,34 +68,98 @@
     <!-- Navbar End -->
 
     <!-- Jumbotron -->
-    <div class="container">
-      <div class="row d-flex flex-column">
-        <div class="d-flex flex-row justify-content-center align-items-center mt-5">
-          <div class="alert alert-warning p-1 text-black fw-bold mr-2" role="alert">New in v5.2</div>
-          CSS Variables, responsive offcanvas, new utilities, and more!
-        </div>
-        <div class="d-flex align-items-center justify-content-center flex-column mt-2">
-          <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="" width="200" />
-          <p class="fs-1 fw-bold">Build fast, responsive sites with Bootstrap</p>
-          <p class="fs-4 text-center">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
-        </div>
-        <div class="d-flex flex-row justify-content-center align-items-center">
-          <pre><code>$ npm i bootstrap@5.2.1</code></pre>
-          <a class="btn btn-primary violet mt-3 p-3 text-white" href="#" role="button"><i class="bx bxs-book-open"></i> Read the Docs</a>
-        </div>
-        <div class="d-flex flex-row justify-content-center align-items-center">
-          <p class="fs-6">Currently v5.2.1</p>
-          <p class="fs-6">∙</p>
-          <a class="fs-6" href="#">Download</a>
-          <p class="fs-6">∙</p>
-          <a class="fs-6" href="#">v4.6.x docs</a>
-          <p class="fs-6">∙</p>
-          <a class="fs-6" href="#">All releases</a>
+    <div class="bg-jumbotron">
+      <div class="container">
+        <div class="row d-flex flex-column">
+          <div class="d-flex flex-row justify-content-center align-items-center mt-5">
+            <div class="alert alert-warning p-1 text-black fw-bold right" role="alert">New in v5.2</div>
+            <p class="fw-semibold ml-3">CSS Variables, responsive offcanvas, new utilities, and more!</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center flex-column mt-2">
+            <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="" width="200" />
+            <p class="fs-1 fw-bold">Build fast, responsive sites with Bootstrap</p>
+            <p class="fs-4 text-center">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+            <a class="btn btn-primary violet mt-3 p-3 text-white" href="#" role="button"><i class="bx bxs-book-open"></i> Read the Docs</a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+            <p class="fs-6">Currently v5.2.1</p>
+            <p class="fs-6">∙</p>
+            <p><a class="fs-6" href="#">Download</a></p>
+            <p class="fs-6">∙</p>
+            <p><a class="fs-6" href="#">v4.6.x docs</a></p>
+            <p class="fs-6">∙</p>
+            <p><a class="fs-6" href="#">All releases</a></p>
+          </div>
         </div>
       </div>
     </div>
     <!-- Jumbotron End -->
 
+    <div class="container">
+      <div class="row">
+        <div class="d-flex flex-column justify-content-center align-items-center mar-up">
+          <div class="alert alert-info p-3" role="alert">
+            <i class="bx bx-code"></i>
+          </div>
+          <p class="fs-1 fw-bold">Get started any way you want</p>
+          <p class="fs-5 text-center">Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the source code.</p>
+          <a href="#" class="fs-5 text-center fw-bold">Read installation <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mar-up">
+        <div class="col-5">
+          <div class="d-flex flex-column p-3">
+            <i class="bx bx-box"></i>
+            <p class="fs-2 fw-bold">Install via package manager</p>
+            <p class="fs-5">
+              Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also use our npm template repo to quickly
+              generate a Bootstrap project via npm.
+            </p>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="line-vertical1"></div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="d-flex flex-column p-3">
+            <i class="bx bx-globe"></i>
+            <p class="fs-2 fw-bold">Include via CDN</p>
+            <p class="fs-5">
+              When you only need to include Bootstrap’s compiled CSS or JS, you can use jsDelivr. See it in action with our simple quick start, or browse the examples to jumpstart your next project. You can also choose to include Popper and
+              our JS separately.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mar-up">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <p class="fs-5 fw-bold">Read our getting started guides</p>
+          <p class="fs-5">Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+          <div class="d-flex flex-row justify-content-center align-items-center mt-2">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img src="https://getbootstrap.com/docs/5.2/assets/img/webpack.png" alt="" height="90" />
+              <p class="fs-6">Webpack</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img src="https://getbootstrap.com/docs/5.2/assets/img/parcel.png" alt="" height="90" />
+              <p class="fs-6">Parcel</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <img src="https://getbootstrap.com/docs/5.2/assets/img/vite.png" alt="" height="90" />
+              <p class="fs-6">Vite</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- CDN Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
