@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .violet {
   background-color: #712cf9;
 }
@@ -71,4 +75,12 @@
 
 .txt-decorate {
   text-decoration: none;
+}
+
+.syntax {
+  background-color: #cecece;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  width: 320px;
 }

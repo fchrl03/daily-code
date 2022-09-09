@@ -40,7 +40,7 @@
               <a class="nav-link text-white" href="#">Blog</a>
             </li>
           </ul>
-          <form class="d-flex">
+          <div class="d-flex">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-white" href="#"><i class="bx bxl-github"></i></a>
@@ -52,16 +52,11 @@
                 <a class="nav-link text-white" href="#"><i class="bx bx-shape-circle"></i></a>
               </li>
               <div class="line-vertical"></div>
-              <li class="nav-item dropdown">
+              <li class="dropdown">
                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">v5.2</a>
-                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-lg-start">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
             </ul>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
@@ -79,7 +74,13 @@
             <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="" width="200" />
             <p class="fs-1 fw-bold">Build fast, responsive sites with Bootstrap</p>
             <p class="fs-4 text-center">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
-            <a class="btn btn-primary violet mt-3 p-3 text-white" href="#" role="button"><i class="bx bxs-book-open"></i> Read the Docs</a>
+          </div>
+          <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+            <div class="syntax d-flex flex-row justify-content-between align-items-center">
+              <h1 class="fs-6">$ npm i bootstrap@5.2.1</h1>
+              <i class="bx bx-copy"></i>
+            </div>
+            <a class="btn btn-primary violet p-3 text-white" href="#" role="button"><i class="bx bxs-book-open"></i> Read the Docs</a>
           </div>
           <div class="d-flex flex-row justify-content-center align-items-center mt-3">
             <p class="fs-6">Currently v5.2.1</p>
@@ -208,7 +209,7 @@
         <div class="row">
           <div class="col-4">
             <div class="d-flex flex-column">
-              <div class="d-flex flex-row align-items-center">
+              <div class="d-flex align-items-center">
                 <img class="img-filter" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" height="40" alt="" />
                 <p class="fs-6 fw fw-semibold">Bootstrap</p>
               </div>

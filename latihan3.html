@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodea</title>
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/latihan3.css" />
+    <!-- CDN Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand text-black fw-bold txt-color" href="#">Foodea</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold f-navbar text-black txt-color" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold f-navbar text-black txt-color" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold f-navbar text-black txt-color" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold f-navbar text-black txt-color" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold f-navbar text-black txt-color" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p class="fs-6 fw-bold first-color">Welcome</p>
+            <p class="fs-2 fw-bold">Discover Restaurant & Healthy Food</p>
+            <p class="fs-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nulla maiores, saepe odit labore accusamus aspernatur ea repellendus sunt, autem ipsam, nobis explicabo temporibus modi quasi vero maxime quibusdam corrupti.
+            </p>
+            <a class="btn first-bgcolor btn-light text-white" href="#" role="button">Explore <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="assets/image/main.png" width="400" height="350" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container">
+      <div class="fs-5 text-center mt-5 fw-semibold">Hurry Up!</div>
+      <div class="fs-3 text-center mt-2 fw-bold">DEAL OF THE WEEK</div>
+      <div class="d-flex flex-row justify-content-evenly align-items-center mt-5">
+        <div class="card shadow" style="width: 18rem">
+          <img src="assets/image/nasigoreng.jpg" height="200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Nasi Goreng</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit perferendis, labore placeat quo provident beatae!</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="fs-6">Rp. 16.000</div>
+              <a class="btn btn-success" href="#" role="button">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow" style="width: 18rem">
+          <img src="assets/image/ayambakar.jpg" height="200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Nasi Ayam Bakar</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio deserunt eveniet at fugiat expedita.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="fs-6">Rp. 20.000</div>
+              <a class="btn btn-success" href="#" role="button">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow" style="width: 18rem">
+          <img src="assets/image/kwetiau.jpg" height="200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Kwetiau Goreng</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum optio, sed reiciendis corporis deserunt?</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="fs-6">Rp. 15.000</div>
+              <a class="btn btn-success" href="#" role="button">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CDN Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      const nav = document.querySelector('nav');
+      const color = document.querySelectorAll('.txt-color');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('nav-bgcolor', 'shadow');
+          color.classList.add('text-white');
+          color.classList.remove('text-black');
+        } else {
+          nav.classList.remove('nav-bgcolor', 'shadow');
+          color.classList.remove('text-white');
+          color.classList.add('text-black');
+        }
+      });
+    </script>
+  </body>
+</html>
