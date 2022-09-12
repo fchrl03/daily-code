@@ -212,17 +212,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
       const nav = document.querySelector('nav');
-      const color = document.querySelectorAll('.txt-color');
+      // const color = document.querySelectorAll('.txt-color');
 
       window.addEventListener('scroll', function () {
         if (window.pageYOffset > 100) {
           nav.classList.add('nav-bgcolor', 'shadow');
-          color.classList.add('text-white');
-          color.classList.remove('text-black');
+          // color.classList.add('text-white');
+          // color.classList.remove('text-black');
         } else {
           nav.classList.remove('nav-bgcolor', 'shadow');
-          color.classList.remove('text-white');
-          color.classList.add('text-black');
+          // color.classList.remove('text-white');
+          // color.classList.add('text-black');
         }
       });
     </script>
