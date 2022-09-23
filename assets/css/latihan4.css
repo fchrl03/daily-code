@@ -1,7 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 .dark-blue {
   background-color: #01416c;
+  color: white;
+}
+
+.txt-dark-blue {
+  color: #01416c;
+}
+
+.dark-blue:hover {
+  color: black;
+}
+
+.mar-homepage {
+  margin-top: 9rem;
 }
