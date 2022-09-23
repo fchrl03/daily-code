@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/latihan4.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://theme.zdassets.com/theme_assets/2358777/35df5e6d85e97f8a02239c1beac48b4cdff1e3ef.png" type="image/x-icon" />
+    <!-- CDN Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
@@ -25,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#homepage">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Why Us</a>
+              <a class="nav-link" href="#why-us">Why Us</a>
             </li>
           </ul>
-          <div class="d-flex">
+          <div class="d-flex column-navbar">
             <ul class="navbar-nav">
               <li class="nav-item" style="margin-right: 15px">
                 <a class="nav-link" href="#">Masuk</a>
@@ -45,6 +47,13 @@
         </div>
       </div>
     </nav>
+
+    <!-- Button Chat -->
+    <div class="chat-button d-flex align-items-center justify-content-evenly flex-row gap-2" role="alert">
+      <div class="bx bxl-whatsapp text-white"></div>
+      <div class="text-white fw-semibold" id="txt-chat" style="font-size: 16px">Chat dengan kami</div>
+    </div>
+
     <!-- Homepage -->
     <div class="container" id="homepage">
       <div class="row mar-homepage">
@@ -54,10 +63,174 @@
           <p class="fs-5">Hubungi kami dan cari tahu bagaimana Qiscus dapat membantu bisnis Anda terus berkembang!</p>
           <a class="btn btn-primary p-3" href="#" role="button">Get Demo + Free Trial</a>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 image-homepage">
           <img src="https://www.qiscus.com/v5/images/responsive/3d/home_640@2x.webp" style="width: 100%" alt="" />
         </div>
       </div>
+    </div>
+
+    <!-- Partner -->
+    <div class="container">
+      <p class="fs-2 fw-bold text-center txt-dark-blue mar-up">Digunakan Oleh 1000+ Perusahaan Terpercaya</p>
+      <div class="row">
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/ruang-guru_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/bluebird_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/efishery_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/jenius_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/ajaib_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/manulife_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/pertamina_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/ahm_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/gramedia_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/modena_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/kino_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/dompet-dhuafa_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/itb_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/morula_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/elsheskin_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/wardah_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/unilever_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/kfc_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/pizza-hut_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/lemonilo_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/seabank_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/kredivo_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/fif-group_120@2x.webp" alt="" style="width: 100%" /></div>
+        <div class="col-4 col-md-2"><img src="https://www.qiscus.com/v5/images/responsive/logos/clients/bpjs_120@2x.webp" alt="" style="width: 100%" /></div>
+        <p class="fs-4 fw-semibold text-center">Dan masih banyak lagi perusahaan dari berbagai industri.</p>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="container" id="about">
+      <div class="row mar-up">
+        <div class="col-12 col-md-6 order-md-2">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/manage-conversation_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Kelola Percakapan dari 20+ Channel dalam Satu Platform.</p>
+          <p class="fs-4">Mudahkan tim Anda respon dengan cepat setiap chat pelanggan dari live chat, WhatsApp, Instagram, Facebook, Tokopedia, dan berbagai aplikasi lainnya dari satu tempat.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 6rem">
+        <div class="col-12 col-md-6">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/collect-leads-seamlessly_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Kumpulkan Leads Lebih Banyak dan Seamless.</p>
+          <p class="fs-4">Qiscus memungkinkan Anda manfaatkan aplikasi chat untuk lead generation dengan user experience yang lebih baik dan proses implementasi yang mudah.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 6rem">
+        <div class="col-12 col-md-6 order-md-2">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/increase-rate-conversion_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Tingkatkan Konversi Penjualan Melalui Percakapan.</p>
+          <p class="fs-4">Permudah tim Anda lakukan follow-up calon pelanggan memalui percakapan yang bermakna. Bangun hubungan yang hangat dan hasilkan deal lebih banyak.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 6rem">
+        <div class="col-12 col-md-6">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/provide-excellent-support_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Berikan Support yang Baik dan Cepat agar Bisnis Dicintai Pelanggan.</p>
+          <p class="fs-4">Fitur alokasi agent otomatis, performance analytics, dan CSAT bantu Anda pastikan tim memberikan layanan dukungan terbaik kepada setiap pelanggan.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 6rem">
+        <div class="col-12 col-md-6 order-md-2">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/human-bot-collaboration_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Buat Kerja Tim Lebih Efektif dengan Human-Bot Collaboration.</p>
+          <p class="fs-4">Solusi Chatbot dari Qiscus dapat membuat kinerja tim sales atau support bekerja lebih optimal. Implementasinya pun mudah dan cepat dengan teknologi No-Code Chatbot.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 6rem">
+        <div class="col-12 col-md-6">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/auto-personalized-message_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Kirim Pesan Secara Otomatis dan Terpersonalisasi.</p>
+          <p class="fs-4">Kirimkan pesan Notifikasi, OTP, Transaksi, Promo, dan berbagai pesan lainnya dengan lebih personal kepada setiap pelanggan bisnis Anda.</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin: 6rem 0px">
+        <div class="col-12 col-md-6 order-md-2">
+          <img src="https://www.qiscus.com/v5/images/responsive/pages/home/treatment/flexible-integration_640@2x.webp" alt="" style="width: 100%" />
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+          <p class="fs-4 fw-bold txt-dark-blue">Fleksibel Diintegrasikan ke Berbagai Sistem.</p>
+          <p class="fs-4">Solusi yang dibangun oleh Qiscus secara fleksibel dapat diintegrasikan ke berbagai sistem atau aplikasi lain sesuai flow yang dibutuhkan pada bisnis Anda.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Us -->
+    <div class="bg-why-us" id="why-us">
+      <div class="fs-1 text-white text-center fw-bold">Solusi Qiscus Terbukti Mampu</div>
+      <div class="fs-1 text-white text-center fw-bold mb-5">Bantu Tingkatkan Performa Bisnis</div>
+      <div class="container">
+        <div class="row mt-2">
+          <div class="col-12 col-md-4 mt-4">
+            <div class="border border-3 rounded border-white p-3">
+              <p class="fs-1 text-white fw-bold text-center">+2X</p>
+              <div class="fs-4 text-white fw-semibold text-center">Up to 2X Increase in</div>
+              <div class="fs-4 text-white fw-semibold text-center">Sales Conversion</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4">
+            <div class="border border-3 rounded border-white p-3">
+              <p class="fs-1 text-white fw-bold text-center">+50%</p>
+              <div class="fs-4 text-white fw-semibold text-center">Up to 50% Reduction in</div>
+              <div class="fs-4 text-white fw-semibold text-center">Manpower Cost</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4">
+            <div class="border border-3 rounded border-white p-3">
+              <p class="fs-1 text-white fw-bold text-center">+90%</p>
+              <div class="fs-4 text-white fw-semibold text-center">Up to 90% Increase in</div>
+              <div class="fs-4 text-white fw-semibold text-center">Agent Productivity</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4">
+            <div class="border border-3 rounded border-white p-3">
+              <p class="fs-1 text-white fw-bold text-center">+1.5 Billion</p>
+              <div class="fs-4 text-white fw-semibold text-center">Messages</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4">
+            <div class="border border-3 rounded border-white p-3">
+              <p class="fs-1 text-white fw-bold text-center">+90 Million</p>
+              <div class="fs-4 text-white fw-semibold text-center">End Users</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mt-4">
+            <div class="border border-3 rounded border-white p-3">
+              <p class="fs-1 text-white fw-bold text-center">+50.000</p>
+              <div class="fs-4 text-white fw-semibold text-center">Agents</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer d-flex align-items-center justify-content-evenly">
+      <div class="fs-6 text-white">Qiscus © 2022</div>
     </div>
     <!-- CDN Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

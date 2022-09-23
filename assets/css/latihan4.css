@@ -24,3 +24,49 @@ html {
 .mar-homepage {
   margin-top: 9rem;
 }
+
+.chat-button {
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bxl-whatsapp {
+  font-size: 30px;
+}
+
+.mar-up {
+  margin-top: 8rem;
+}
+
+.bg-why-us {
+  background-color: #2f80ed;
+  padding: 4rem 0;
+}
+
+.footer {
+  padding: 12px;
+  background-color: #173573;
+}
+
+@media (max-width: 991px) {
+  .column-navbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-homepage {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  #txt-chat {
+    display: none;
+  }
+}
