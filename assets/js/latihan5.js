@@ -1,5 +1,5 @@
 const steamAccount = {
-  email: 'fchrl@gmail.com',
+  email: 'example@gmail.com',
   password: 'qwerty',
   isVerified: 'true',
   wallet: 100000,
@@ -7,52 +7,40 @@ const steamAccount = {
     name: 'SubwaySurfer',
     rank: '2',
   },
-  friends: {
-    email: 'fchrl@gmail.com',
-    password: 'qwerty',
-    isVerified: 'true',
-    wallet: 100000,
-    games: {
-      name: 'SubwaySurfer',
-      rank: '1',
+  friends: [
+    {
+      email: 'cok@gmail.com',
+      password: 'qwerty',
+      isVerified: 'true',
+      wallet: 100000,
+      games: {
+        name: 'SubwaySurfer',
+        rank: '1',
+      },
     },
-    email: 'fchrl@gmail.com',
-    password: 'qwerty',
-    isVerified: 'true',
-    wallet: 100000,
-    games: {
-      name: 'SubwaySurfer',
-      rank: '3',
+    {
+      email: 'coki@gmail.com',
+      password: 'qwerty',
+      isVerified: 'true',
+      wallet: 100000,
+      games: {
+        name: 'SubwaySurfer',
+        rank: '3',
+      },
     },
-    email: 'fchrl@gmail.com',
-    password: 'qwerty',
-    isVerified: 'true',
-    wallet: 100000,
-    games: {
-      name: 'SubwaySurfer',
-      rank: '4',
+    {
+      email: 'ucok@gmail.com',
+      password: 'qwerty',
+      isVerified: 'true',
+      wallet: 100000,
+      games: {
+        name: 'SubwaySurfer',
+        rank: '4',
+      },
     },
-    email: 'fchrl@gmail.com',
-    password: 'qwerty',
-    isVerified: 'true',
-    wallet: 100000,
-    games: {
-      name: 'SubwaySurfer',
-      rank: '2',
-    },
-    email: 'fchrl@gmail.com',
-    password: 'qwerty',
-    isVerified: 'true',
-    wallet: 100000,
-    games: {
-      name: 'SubwaySurfer',
-      rank: '2',
-    },
-  },
+  ],
 };
-
-console.log(steamAccount.friends.games[0].rank);
-
+console.log(steamAccount.friends[0].games.rank);
 // let x = 10,
 //   y = false;
 // x++;
@@ -96,3 +84,8 @@ console.log(steamAccount.friends.games[0].rank);
 
 // const q = getCubeVolume(2);
 // console.log(q);
+
+let x = 6,
+  y = 10;
+let equals = x + y;
+console.log(equals > 0 ? (equals % 2 === 0 ? 'Angka lebih dari 0 dan habis dibagi 2' : 'Angka lebih dari 0 namun tidak habis dibagi 2') : 'Angka tidak lebih dari 0');
