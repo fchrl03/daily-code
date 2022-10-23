@@ -47,30 +47,49 @@
   <body>
     <div class="container">
       <div class="layar">
-        <p class="txt-layar">0</p>
+        <p class="txt-layar" id="hasilLayar">0</p>
       </div>
       <div class="row">
-        <button class="box">1</button>
-        <button class="box">2</button>
-        <button class="box">3</button>
-        <button class="box">+</button>
+        <button class="box" onclick="btnValue(this)">1</button>
+        <button class="box" onclick="btnValue(this)">2</button>
+        <button class="box" onclick="btnValue(this)">3</button>
+        <button class="box" onclick="btnValue(this)">+</button>
       </div>
       <div class="row">
-        <button class="box">4</button>
-        <button class="box">5</button>
-        <button class="box">6</button>
-        <button class="box">-</button>
+        <button class="box" onclick="btnValue(this)">4</button>
+        <button class="box" onclick="btnValue(this)">5</button>
+        <button class="box" onclick="btnValue(this)">6</button>
+        <button class="box" onclick="btnValue(this)">-</button>
       </div>
       <div class="row">
-        <button class="box">7</button>
-        <button class="box">8</button>
-        <button class="box">9</button>
-        <button class="box">x</button>
+        <button class="box" onclick="btnValue(this)">7</button>
+        <button class="box" onclick="btnValue(this)">8</button>
+        <button class="box" onclick="btnValue(this)">9</button>
+        <button class="box" onclick="btnValue(this)">*</button>
       </div>
       <div class="row">
-        <button class="box">/</button>
-        <button class="box">Reset</button>
+        <button class="box" onclick="btnValue(this)">/</button>
+        <button class="box" onclick="btnValue(this)">Reset</button>
+        <button class="box" onclick="btnValue(this)">=</button>
       </div>
     </div>
+    <script>
+      const hasilLayar = document.getElementById('hasilLayar');
+      function btnValue(e) {
+        let calculate = e.innerHTML;
+
+        if (calculate == '=') {
+          hasilLayar.innerHTML = eval(hasilLayar.innerHTML);
+        } else if (calculate == 'Reset') {
+          hasilLayar.innerHTML = '0';
+        } else {
+          if (hasilLayar.innerHTML == '0') {
+            hasilLayar.innerHTML = calculate;
+          } else {
+            hasilLayar.innerHTML += calculate;
+          }
+        }
+      }
+    </script>
   </body>
 </html>
