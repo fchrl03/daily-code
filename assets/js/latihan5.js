@@ -85,7 +85,39 @@ console.log(steamAccount.friends[0].games.rank);
 // const q = getCubeVolume(2);
 // console.log(q);
 
-let x = 6,
-  y = 10;
-let equals = x + y;
-console.log(equals > 0 ? (equals % 2 === 0 ? 'Angka lebih dari 0 dan habis dibagi 2' : 'Angka lebih dari 0 namun tidak habis dibagi 2') : 'Angka tidak lebih dari 0');
+// let x = 6,
+//   y = 10;
+// let equals = x + y;
+// console.log(equals > 0 ? (equals % 2 === 0 ? 'Angka lebih dari 0 dan habis dibagi 2' : 'Angka lebih dari 0 namun tidak habis dibagi 2') : 'Angka tidak lebih dari 0');
+
+// Latihan 1
+let x = 50,
+  y = 150,
+  jumlahPenarikan;
+if (x % 5 === 0) {
+  jumlahPenarikan = y - x - 0.5;
+  console.log(jumlahPenarikan);
+} else {
+  console.log('Penarikan Hanya Berlaku Kelipatan 5');
+}
+
+// Latihan 2
+testScores = 40;
+if (testScores > 90) {
+  console.log('A');
+} else if (testScores > 80 && testScores <= 90) {
+  console.log('B');
+} else if (testScores > 70 && testScores <= 80) {
+  console.log('C');
+} else if (testScores > 60 && testScores <= 70) {
+  console.log('D');
+} else {
+  console.log('E');
+}
+
+// Latihan 3
+let ipAddress = '192.168.0.1';
+let result = ipAddress.replaceAll('.', '()');
+console.log(result);
+
+// Latihan 4
