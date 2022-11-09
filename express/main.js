@@ -28,11 +28,42 @@ const users = [
   },
 ];
 
-const getUsersHandler = (req, res) => {
-  res.send(JSON.stringify(users));
+const getUserHandler = (req, res) => {
+  const sName = req.query.name;
+  const sActive = req.query.isActive;
+  // const { id, name, email, password, isActive } = req.body;
+
+  const filteredUser = users.filter((user) => {
+    if (sName !== undefined && sActive !== undefined) {
+      return sName == user.name && sActive == user.isActive;
+    } else if (sName !== undefined) {
+      return sName == user.name;
+    } else if (sActive !== undefined) {
+      return sActive == user.isActive;
+    }
+  });
+
+  res.json(filteredUser);
+  // const filteredUser = users.filter((user) => {
+  //   if (user.name == sName) {
+  // user.name = name;
+  // user.email = email;
+  // user.password = password;
+  // user.isActive = isActive;
+  // return (user.id = id), (user.name = name), (user.email = email), (user.password = password), (user.isActive = isActive);
+  // } else if (user.isActive == sActive) {
+  // user.name = name;
+  // user.email = email;
+  // user.password = password;
+  // user.isActive = isActive;
+  //   } else {
+  //     return user
+  //   }
+  // });
+  // res.send(JSON.stringify(filteredUser));
 };
 
-const createUsersHandler = (req, res) => {
+const createUserHandler = (req, res) => {
   const { name, email, password, isActive } = req.body;
 
   if (!name || !email || !password || !isActive) {
@@ -49,8 +80,59 @@ const createUsersHandler = (req, res) => {
   return;
 };
 
-app.get('/api/users', getUsersHandler);
-app.post('/api/users', createUsersHandler);
+const getUserDetailHandler = (req, res) => {
+  const { id } = req.params;
+  const filteredUser = users.filter((user) => user.id === parseInt(id));
+
+  if (filteredUser.length === 0) {
+    res.status(404).send('User not found!');
+  } else {
+    res.send(filteredUser[0]);
+  }
+};
+
+const deleteUserHandler = (req, res) => {
+  const id = req.param('id');
+  const filteredUser = users.filter((user) => user.id !== parseInt(id));
+
+  if (filteredUser.length === users.length) {
+    res.status(404).send('User not found!');
+  } else {
+    res.json(filteredUser);
+  }
+};
+
+const updateUserHandler = (req, res) => {
+  const { id } = req.params;
+  const { name, email, password, isActive } = req.body;
+
+  const filteredUser = users.filter((user) => user.id === parseInt(id));
+
+  if (filteredUser.length === 0) {
+    res.status(404).send('User not found!');
+    return;
+  }
+
+  const updatedUser = users.map((user) => {
+    if (user.id === parseInt(id)) {
+      user.name = name;
+      user.email = email;
+      user.password = password;
+      user.isActive = isActive;
+    }
+
+    return user;
+  });
+
+  res.json(updatedUser);
+  return;
+};
+
+app.get('/api/users', getUserHandler);
+app.post('/api/users', createUserHandler);
+app.get('/api/users/:id', getUserDetailHandler);
+app.delete('/api/users/:id', deleteUserHandler);
+app.put('/api/users/:id', updateUserHandler);
 
 app.listen(port, () => {
   console.log('Server running at http://127.0.0.1:1000');
