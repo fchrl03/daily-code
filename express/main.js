@@ -41,6 +41,7 @@ const getUserHandler = (req, res) => {
     } else if (sActive !== undefined) {
       return sActive == user.isActive;
     }
+    return user;
   });
 
   res.json(filteredUser);
@@ -128,8 +129,18 @@ const updateUserHandler = (req, res) => {
   return;
 };
 
+const isAdmin = (req, res, next) => {
+  if (req.query.role === 'admin') {
+    next();
+    return;
+  }
+
+  res.status(401).send('Anda bukan Admin');
+  return;
+};
+
 app.get('/api/users', getUserHandler);
-app.post('/api/users', createUserHandler);
+app.post('/api/users', createUserHandler, isAdmin);
 app.get('/api/users/:id', getUserDetailHandler);
 app.delete('/api/users/:id', deleteUserHandler);
 app.put('/api/users/:id', updateUserHandler);

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Terry",
+    "email": "terry@example.com",
+    "password": "example",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "John",
+    "email": "john@example.com",
+    "password": "example",
+    "isActive": false
+  },
+  {
+    "id": 3,
+    "name": "Doe",
+    "email": "doe@example.com",
+    "password": "example",
+    "isActive": true
+  }
+]
