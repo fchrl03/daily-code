@@ -3,7 +3,7 @@ const User = require('./user');
 function handleCreateUser(req, res) {
   const user = User.create(req.body);
 
-  res.status(201).json(user);
+  res.status(200).json(user);
 }
 
 function handleListUser(req, res) {
@@ -19,19 +19,19 @@ function handleGetUser(req, res) {
 }
 
 function handleUpdateUser(req, res) {
-  const user = req.user;
+  // const user = req.user;
 
-  user.update(req.body);
-
+  User.update(req.body, req.params);
+  const user = User.list();
   res.status(200).json(user);
 }
 
 function handleDeleteUser(req, res) {
-  const user = req.user;
+  // const user = req.user;
 
-  user.delete();
+  User.delete(req.params.id);
 
-  res.status(204).end();
+  res.status(200).send('Berhasil Hapus Data');
 }
 
 module.exports = {

@@ -30,20 +30,19 @@ const users = [
 
 const getUserHandler = (req, res) => {
   const sName = req.query.name;
-  const sActive = req.query.isActive;
+  // const sActive = req.query.isActive;
   // const { id, name, email, password, isActive } = req.body;
 
   const filteredUser = users.filter((user) => {
-    if (sName !== undefined && sActive !== undefined) {
-      return sName == user.name && sActive == user.isActive;
+    if (sName !== undefined && user.isActive !== undefined) {
+      return sName == user.name && user.isActive == true;
     } else if (sName !== undefined) {
       return sName == user.name;
-    } else if (sActive !== undefined) {
-      return sActive == user.isActive;
+    } else if (user.isActive !== undefined) {
+      return user.isActive == true;
     }
     return user;
   });
-
   res.json(filteredUser);
   // const filteredUser = users.filter((user) => {
   //   if (user.name == sName) {

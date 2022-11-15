@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "aceraspire5",
+    "database": "orm_development",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "aceraspire5",
+    "database": "orm_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "aceraspire5",
+    "database": "orm_production",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
