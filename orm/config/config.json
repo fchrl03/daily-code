@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "isi username",
-    "password": "isi password",
-    "database": "db_development",
+    "username": "postgres",
+    "password": "aceraspire5",
+    "database": "orm_development",
     "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
-    "username": "isi username",
-    "password": "isi password",
-    "database": "db_test",
+    "username": "postgres",
+    "password": "aceraspire5",
+    "database": "orm_test",
     "host": "localhost",
     "dialect": "postgres"
   },
   "production": {
-    "username": "isi username",
-    "password": "isi password",
-    "database": "db_production",
+    "username": "postgres",
+    "password": "aceraspire5",
+    "database": "orm_production",
     "host": "localhost",
     "dialect": "postgres"
   }
