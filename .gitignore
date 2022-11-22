@@ -4,3 +4,5 @@
 /rest-api/node_modules
 /orm/node_modules
 /pattern/node_modules
+/pattern/.env
+/pattern/config/config.json
