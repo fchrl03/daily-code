@@ -5,4 +5,4 @@
 /orm/node_modules
 /orm/config/config.json
 /pattern/node_modules
-/pattern/config/config.json
+/pattern/.env
