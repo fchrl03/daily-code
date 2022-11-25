@@ -6,10 +6,10 @@ const productController = require('./controllers/productController');
 app.use(express.json());
 
 app.post('/product', productController.create);
-// app.get('/product', productGetAllHandler);
-// app.get('/product/:id', productGetDetailHandler);
-// app.put('/product/:id', productUpdateHandler);
-// app.delete('/product/:id', productDeleteHandler);
+app.get('/product', productController.getAllProduct);
+app.get('/product/:id', productController.getDetailProduct);
+app.put('/product/:id', productController.updatedProduct);
+app.delete('/product/:id', productController.deleteProductById);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);

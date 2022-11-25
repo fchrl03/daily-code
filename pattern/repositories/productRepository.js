@@ -10,6 +10,11 @@ class ProductRepository {
     return createdProduct;
   }
 
+  static async getAll() {
+    const getAllProduct = await products.findAll();
+    return getAllProduct;
+  }
+
   static async getByID({ id }) {
     const getProduct = await products.findOne({ where: { id } });
     return getProduct;
@@ -20,7 +25,7 @@ class ProductRepository {
     return deleteProduct;
   }
 
-  static async updateByID({ name, price, stock }) {
+  static async updateByID({ name, price, stock, id }) {
     const updatedProduct = await products.update(
       {
         name,
