@@ -1,30 +1,20 @@
-const { users } = require('../models');
+const authService = require('../services/authService');
 
-function encryptPassword(password) {
-  return password;
-}
+const register = async (req, res) => {
+  const { name, email, password, role } = req.body;
 
-async function registerAuth(req, res) {
-  try {
-    const email = req.body.email;
-    const encryptedPassword = await encryptPassword(req.body.password);
-    const user = await users.create({
-      email,
-      encryptedPassword,
-    });
-    res.status(201).json({
-      status: 'OK',
-      data: {
-        email: user.email,
-        password: user.password,
-      },
-    });
-  } catch (err) {
-    res.status(422).json({
-      status: 'FAIL',
-      message: err.message,
-    });
-  }
-}
+  const { status, status_code, message, data } = await authService.register({
+    name,
+    email,
+    password,
+    role,
+  });
 
-module.exports = { registerAuth };
+  res.status(status_code).send({
+    status: status,
+    message: message,
+    data: data,
+  });
+};
+
+module.exports = { register };
