@@ -1,0 +1,49 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Products API",
+    "description": "Products API Clone DOCS",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Product",
+      "description": "API for products"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/products": {
+      "post": {
+        "tags": ["Product"],
+        "summary": "add product endpoint",
+        "parameters": [
+          {
+            "name": "product",
+            "in": "body",
+            "description": "add product",
+            "schema": {
+              "$ref": "#/definitions/Products"
+            }
+          }
+        ],
+        "response": {
+          "201": {
+            "description": "Success add product.",
+            "schema": {
+              "$ref": "#/definitions/Products"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,6 @@
 /nodejs/node_modules
 /rest-api/node_modules
 /orm/node_modules
-/orm/config/config.json
+/orm/.env
 /pattern/node_modules
 /pattern/.env

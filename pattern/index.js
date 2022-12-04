@@ -1,8 +1,8 @@
 const express = require('express');
 const port = 8000;
 const bodyParser = require('body-parser');
-// const swaggerUi = require('swagger-ui-express');
-// const swaggerDocument = require('./swagger.json');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 
 const app = express();
 app.use(express.json());
@@ -23,7 +23,7 @@ app.put('/product/:id', productController.updatedProduct);
 app.delete('/product/:id', productController.deleteProductById);
 
 // API Documentation
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
